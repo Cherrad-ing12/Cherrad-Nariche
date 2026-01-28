@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nous écrire</title>
+    <link rel="stylesheet" href="../style-css/Nous-Ecrire.css">
+</head>
+<body>
+
+<main class="container">
+
+    <h1 class="title">Nous écrire</h1>
+    <p class="subtitle">
+        Avant de nous contacter, merci de te présenter.<br>
+        Chaque message est lu avec attention.
+    </p>
+
+    <form id="contactForm" class="form reveal">
+
+        <input type="text" id="fullname" placeholder="Nom et prénom" required>
+
+        <input type="date" id="birthdate" required>
+
+        <select id="gender" required>
+            <option value="">Tu es…</option>
+            <option value="Homme">Homme</option>
+            <option value="Femme">Femme</option>
+        </select>
+
+        <textarea id="source" placeholder="Comment as-tu retrouvé ce site ?" required></textarea>
+
+        <button type="submit" class="cta-btn">Valider</button>
+    </form>
+
+    <div id="whatsappBox" class="whatsapp-box">
+        <h2>Nos contacts officiels</h2>
+        <p>
+            Merci pour ton message.<br>
+            Tu peux désormais nous écrire directement.
+        </p>
+
+        <div class="numbers">
+            <a href="https://wa.me/242065823119" target="_blank">📱 Cherrad</a>
+            <a href="https://wa.me/242066370304" target="_blank">📱 Nariche</a>
+        </div>
+    </div>
+
+</main>
+
+<script src="../js/Nous-Ecrire.js"></script>
+</body>
+</html>

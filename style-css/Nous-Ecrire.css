@@ -1,0 +1,124 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    min-height:100vh;
+    background:linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+    color:#fff;
+    opacity:0;
+    transition:opacity 0.6s ease;
+}
+
+.container{
+    max-width:720px;
+    margin:auto;
+    padding:120px 20px;
+    text-align:center;
+}
+
+.title{
+    font-size:48px;
+    margin-bottom:15px;
+    color:#00FFC3;
+}
+
+.subtitle{
+    font-size:18px;
+    opacity:0.85;
+    margin-bottom:60px;
+}
+
+.form{
+    background:rgba(255,255,255,0.06);
+    backdrop-filter:blur(14px);
+    padding:50px 40px;
+    border-radius:30px;
+    box-shadow:0 40px 80px rgba(0,0,0,0.35);
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+    opacity:0;
+    transform:translateY(60px);
+    transition:1s ease;
+}
+
+.form.active{
+    opacity:1;
+    transform:translateY(0);
+}
+
+input,select,textarea{
+    padding:15px 18px;
+    border:none;
+    border-radius:14px;
+    font-size:16px;
+    outline:none;
+}
+
+textarea{
+    resize:none;
+    min-height:120px;
+}
+
+.cta-btn{
+    margin-top:20px;
+    padding:14px;
+    border-radius:40px;
+    border:none;
+    background:linear-gradient(90deg,#FFD700,#00FFC3);
+    font-weight:600;
+    cursor:pointer;
+    transition:0.4s;
+}
+
+.cta-btn:hover{
+    transform:scale(1.05);
+    box-shadow:0 15px 30px rgba(0,255,195,0.4);
+}
+
+.whatsapp-box{
+    display:none;
+    margin-top:80px;
+    padding:60px 40px;
+    background:rgba(0,0,0,0.55);
+    border-radius:30px;
+}
+
+.whatsapp-box h2{
+    font-size:32px;
+    margin-bottom:20px;
+    color:#FFD700;
+}
+
+.whatsapp-box p{
+    font-size:18px;
+    margin-bottom:30px;
+}
+
+.numbers{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+}
+
+.numbers a{
+    text-decoration:none;
+    padding:14px 28px;
+    border-radius:40px;
+    background:#00FFC3;
+    color:#000;
+    font-weight:600;
+    transition:0.3s;
+}
+
+.numbers a:hover{
+    transform:scale(1.08);
+}
+
+@media(max-width:600px){
+    .title{font-size:36px;}
+}
